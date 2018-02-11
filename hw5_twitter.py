@@ -88,7 +88,6 @@ print("TWEETS ANALYZED: ", num_tweets)
 response = make_request_from_twitter(username,num_tweets)
 
 file = open("tweets.json" , "w")
-# tweets_file = "tweets.json"
 file.write(json.dumps(response, indent = 2))
 file.close
 # print(list_of_tweets[0]["text"])
